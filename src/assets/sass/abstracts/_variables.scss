@@ -2,13 +2,15 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
+/*color*/
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
 
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+        'small': 320px,
+        'medium': 768px,
+        'large': 1024px,
 ) !default;
 
 
