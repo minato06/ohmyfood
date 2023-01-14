@@ -1,3 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains all sass related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+header{
+  height:60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

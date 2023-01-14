@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 /*color*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -7,6 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -314,6 +316,7 @@ template {
  */
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 /**
@@ -331,6 +334,11 @@ html {
 /**
  * Basic sass for links
  */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
 /**
  * Clear inner floats
  */
@@ -338,6 +346,59 @@ html {
   clear: both;
   content: "";
   display: table;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gps {
+  background-color: #eaeaea;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #353535;
+}
+.gps span:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f3c5";
+  margin-right: 15px;
+}
+
+.landing {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  text-align: center;
+  /*&>*{
+    max-width: 80%;
+  }*/
+}
+.landing h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.landing p {
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+.landing button {
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: white;
+  border: none;
+  background-image: linear-gradient(355deg, hsl(267deg, 66%, 60%) 0%, hsl(292deg, 62%, 63%) 62%, hsl(317deg, 100%, 74%) 100%);
 }
 
 /*# sourceMappingURL=/main.73d5912c.css.map */
